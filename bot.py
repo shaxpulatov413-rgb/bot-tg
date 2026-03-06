@@ -3,7 +3,7 @@ from telebot import types
 import json
 import os
 
-TOKEN = "8689931840:AAH44pUtOgX6RGkg4NSF5-KoZDbOip8rBgo
+TOKEN = "8689931840:AAHLMLXLhbR6QRVwybXXhjYRhj0VsEDQNq0
 "
 GROUP_ID = -1003727920702
 
@@ -222,5 +222,6 @@ def handle_comment(message):
         bot.send_message(manager_chat,text)
 
     del pending_reviews[message.from_user.id]
+
 
 bot.infinity_polling()
